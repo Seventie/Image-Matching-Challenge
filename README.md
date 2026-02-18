@@ -22,7 +22,7 @@ A comprehensive study and implementation of image matching techniques for the [K
 
 The goal of this project is to estimate the **fundamental matrix** between pairs of images taken from different viewpoints. The fundamental matrix encodes the epipolar geometry between two views and is a core component of **Structure from Motion (SfM)** — the process of reconstructing 3D scenes from 2D images.
 
-This repository distills and builds upon techniques from four competition notebooks (stored separately in the `old/` directory for reference) and presents them in two clean, well-documented notebooks with interactive Plotly dark-mode visualizations.
+This repository distills and builds upon techniques from four competition notebooks (stored in `old/`) and presents them in two refreshed notebooks. Notebook 1 heavily builds on `image-matching-challenge-2022-eda.ipynb`, and Notebook 2 consolidates feature-matching pipelines from the remaining matching-focused notebooks.
 
 ---
 
@@ -69,6 +69,14 @@ The training set contains 16 landmark scenes including British Museum, Florence 
 
 ---
 
+## Execution Notes
+
+- Dataset path in notebooks is fixed to `/kaggle/input/image-matching-challenge-2022`.
+- All notebook visualizations and metrics use real IMC2022 images/results.
+- Plotly charts are configured with `plotly_dark`.
+
+---
+
 ## Repository Structure
 
 ```
@@ -77,6 +85,16 @@ Image-Matching-Challenge/
 |-- README.md                                        # This file
 |-- 01_image_matching_eda_cv_fundamentals.ipynb       # Notebook 1: EDA and CV basics
 |-- 02_feature_matching_pipeline.ipynb                # Notebook 2: Full matching pipeline
+|
+|-- n1/                                              # Reference notebooks for Notebook 1
+|   |-- computervision-assignment.ipynb               #   Stereo vision, SIFT/ORB basics
+|   |-- image-matching-challenge-2022-eda.ipynb       #   Comprehensive EDA (primary reference)
+|
+|-- n2/                                              # Reference notebooks for Notebook 2
+|   |-- estimating-f-sift-usac-magsac-feature-matching.ipynb  # SIFT + MAGSAC pipeline
+|   |-- imc-2022-kornia-score-0-725.ipynb             #   LoFTR (Kornia) pipeline, score 0.725
+|
+|-- old/                                             # All original source notebooks
 ```
 
 ### Notebook Descriptions
