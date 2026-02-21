@@ -1,5 +1,12 @@
 # Image Matching Challenge 2022
 
+## Notebooks 
+Please find the Kaggle notebook links with outputs attached below.
+
+Kindly note that the notebooks located in the root directory have not been executed.
+-> [IMC 2022 EDA and BASELINE CV PIPELINE](https://www.kaggle.com/code/shaikabdussattar/imc2022-eda-and-baseline-cv-pipeline)
+-> [IMC 2022 FEATURE MATCHING](https://www.kaggle.com/code/shaikabdussattar/imc-2022-feature-matching)
+
 A comprehensive study and implementation of image matching techniques for the [Kaggle Image Matching Challenge 2022](https://www.kaggle.com/competitions/image-matching-challenge-2022). This repository contains two detailed Jupyter notebooks that cover everything from exploratory data analysis and computer vision fundamentals to a full cumulative feature matching pipeline.
 
 ---
